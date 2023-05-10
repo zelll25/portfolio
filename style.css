@@ -87,7 +87,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url(images/bg2.jpg);
+    background-image: url('../images/bg2.jpg');
     background-size: cover;
     max-width: 100%;
     
