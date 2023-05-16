@@ -217,7 +217,7 @@ span{
     font-size: 2.6rem;
     color: #754561;
 }
-.about-content p {
+.about-content p span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
@@ -463,49 +463,87 @@ span{
     transform: scale(1.1);
     cursor: pointer;
 }
-#achievements{
-    padding: 0;
-    
-    
+#awards {
+  padding: 50px 0;
 }
-.sub-title{
-text-align: center;
-    font-size: 4rem;
+
+.sub-title {
+  text-align: center;
+  font-size: 4rem;
 }
-#achievements .container{
-    text-align: center;
+
+#awards .container {
+  text-align: center;
+}
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
 .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-    border: solid palevioletred;
-}
-.cert-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    
-}
-.cert-list div{
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Set the aspect ratio to 4:3 */
+  overflow: hidden;
+  border: solid palevioletred;
 }
 
-.cert-list div a:hover{
-    background: var(--main-color);
+.project-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.cert-list div {
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
 }
-.cert-list div:hover{
-    background: var(--main-color);
-    transform: translateY(-10px);
+
+.cert-list div a:hover {
+  background: var(--main-color);
 }
+
+.cert-list div:hover {
+  background: var(--main-color);
+  transform: translateY(-10px);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: #C8A19C;
+}
+.footer-text p{
+    font-size: 1.6rem;
+} 
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background:#4c3939;
+    border-radius: .8rem;
+}
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--shadow-color);
+}
+.footer-iconTop a i  {
+    font-size: 2.4rem;
+    color: seashell;
+}
+
+ 
 
 @media (max-width: 768px){
     #menu-icon {
