@@ -227,8 +227,9 @@ span{
 }
 .btn-box .btns a::before{
     background: var(#C8A19C)
-
-
+}
+.about-content {
+        text-align: center;
 }
 .education .title {
     text-align: center;
